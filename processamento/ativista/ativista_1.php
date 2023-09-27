@@ -36,6 +36,6 @@
             echo "</div>";
         echo "</form>";
     ?>
-    <script src="./script_ativista.js"></script>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>
