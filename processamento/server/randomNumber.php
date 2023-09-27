@@ -10,7 +10,12 @@ $randomNumber = rand(1, 20);
 array_push(
   $dados,
   array(
-    "status" => "200",
+    "status" => "200"
+  )
+);
+array_push(
+  $dados,
+  array(
     "number" => $randomNumber
   )
 );

@@ -22,7 +22,7 @@ btnDado.addEventListener("click", async () => {
     if(resultado[0].status === "200")
     {
       // Recebe valor aleatório gerado
-      dadoGerado = resultado[0].number;
+      dadoGerado = resultado[1].number;
 
       // Atualizar o texto do botão do dado com o valor gerado
       btnDado.innerHTML = `Número gerado no Dado: ${dadoGerado}`;
