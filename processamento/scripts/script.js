@@ -41,7 +41,7 @@ btnDado.addEventListener("click", async () => {
     }
   }
 });
-
+/*
 formContinue.addEventListener("submit", async (event) => {
   event.preventDefault();
 
@@ -55,4 +55,4 @@ formContinue.addEventListener("submit", async (event) => {
       body: dados
     }
   )
-})
+})*/
