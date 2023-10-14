@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Roboto:wght@100&display=swap');
+
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F4E2B7; 
+    background-image: url(../imagens/fundo_mobile_1.png);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    min-height: 100vh;
+}
+h1, h2{
+    font-family: "Finger Paint";
+    text-align: center;
+    font-size: 50px;
+    color: #001E40;
+    text-shadow:
+        -1px -1px 0 #F4E2B7, /* Sombra superior esquerda */
+        1px -1px 0 #F4E2B7,  /* Sombra superior direita */
+        -1px 1px 0 #F4E2B7,  /* Sombra inferior esquerda */
+        1px 1px 0 #F4E2B7;   /* Sombra inferior direita */
+}
+h2{
+    font-size: 40px;
+}
+.box-Container{
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center; /* Centralizar verticalmente */
+    justify-content: center; /* Centralizar horizontalmente */
+}
+.h2_perso{
+    font-size: 30px;
+}
+#box-jogar_1{
+    text-align: center;
+    position: fixed;
+    display: flex;
+    bottom: 50px;
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#btindex{
+    bottom: 10px;
+}
+#btnindex{
+    display: block;
+}
+#box-info, #box-voltar{
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    cursor: pointer;
+}
+#box-voltar{
+    top: 50px;
+}
+#btinfo, #btvoltar{
+    font-family: "Finger Paint";
+    color: #F4E2B7;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.44);
+    text-decoration: none;    
+    font-size: 25px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: #F4E2B7;
+    color: #F4E2B7;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 20px;
+}
+.txt_historia, .txt_finais{
+    font-size: 20px;
+    font-family: "Finger Paint";
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: #F4E2B7;
+    color: #F4E2B7;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 20px;
+    
+}
+.txt_finais{
+    width: 50%;
+    height: auto;
+    margin: 10px;
+}
+#box-finais{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#btJogar, #btfinais{
+    position: relative;
+    font-family: "Finger Paint";
+    color: #F4E2B7;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: transparent;
+    border: none;
+}
+#body_2{
+    background-image: none;
+    background-color: #F4E2B7;
+    background-image: url(../imagens/molde.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+}
+.body_3{
+    background-color: #F4E2B7; 
+    background-image: url(../imagens/fundo_mobile.png);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: scroll;
+    height: 100%;
+    width: 100%;
+}
+.perso{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+#btnLancarDado, #btnVoltar{
+    font-family: "Finger Paint";
+    color: #F4E2B7;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.44);    
+    font-size: 17px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: #F4E2B7;
+    color: #F4E2B7;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+#btnVoltar{
+    padding: 15px;
+    font-size: 20px;
+}
+#btnContinuar.off {
+    font-family: "Finger Paint";
+    text-align: center;
+    font-size: 17px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: not-allowed; 
+    background-color: rgba(0, 0, 0, 0.44);    
+    color: #F4E2B7;
+    border-color: #F4E2B7;
+    opacity: 0.5; 
+}
+#btnContinuar.on {
+    font-family: "Finger Paint";
+    text-align: center;
+    font-size: 17px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer; 
+    background-color: rgba(0, 0, 0, 0.44);    
+    color: #F4E2B7;
+    border-color: #F4E2B7;
+    opacity: 1;
+}
+#img_final{
+    width: 100%;
+    padding-top: 20px;
+    border-radius: 50px;
+}
+#img_info{
+    width: 40%;
+    padding-top: 20px;
+}
+#img_desconhecido{
+    width: 50%;
+    padding-top: 20px;
+}
+#img_final_revelado{
+    width: 55%;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+#legenda{
+    font-size: 15px;
+}
+#displayNumber {
+    display: none;
+    visibility: hidden;
+}
+
+@media (min-width: 500px) {
+    body{
+        background-image: url(../imagens/fundo_pc_1.jpg);
+        background-position: right;
+    }
+    #body_2{
+        background-image: url(../imagens/molde.jpg);
+        overflow: scroll;
+    }
+    .body_3{
+        background-image: url(../imagens/fundo_pc.jpg);
+    }
+    #box-jogar_1{
+        bottom: 60px;
+    }
+    #box-info{
+        top: 30px; 
+    }
+    #btJogar::after {
+        content: ' / '; 
+    }
+    #box-voltar{
+        top: 50px;
+        left: 14vh;
+    }
+    .txt_finais{
+        width: 25%;
+    }
+    #img_final{
+        width: 80%;
+    }
+    .perso{
+        width: 30%;
+        margin-top: -30px;
+    }
+    .h2_perso{
+        margin-bottom: 50px;
+    }
+    .txt_historia{
+        margin-left: 80px;
+        margin-right: 80px;
+        font-size: 23px;
+    }
+    #img_final{
+        width: 40%;
+    }
+}
